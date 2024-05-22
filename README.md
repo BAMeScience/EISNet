@@ -12,7 +12,6 @@ pip install -r requirements.txt
 you can easliy run the model in ```main.py``` and define global parameters. The file contains the modules required for generated the data ```model.generate_data()```, pre-processing the data ```model.preprocess_data(data=data)```, ```model.Train(Training_data)``` for training the model, and 
 For testing the model you can use ```model.Predict(Test_data)``` 
 
-```model.generate_data()``` saves the data in folder "Data".
 Addtionally ```model.Predict(Test_data)``` will save the results in the folder "predictions"
 
 
