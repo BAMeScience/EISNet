@@ -10,7 +10,7 @@ class main():
         define parameters for training the neural network
         """
         self.paramters = {
-            'Data Size': int(10),
+            'Data Size': int(1e3),
             'save_data': False,
             'Frequency_lb': -3,
             'Frequency_ub': 8,

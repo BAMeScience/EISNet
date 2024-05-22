@@ -8,6 +8,7 @@ import seaborn as sns
 import sklearn
 import pandas as pd
 from sklearn.metrics import accuracy_score
+import os
 warnings.filterwarnings("ignore")
 
 
@@ -45,7 +46,10 @@ class Prediction():
         Confidence = Confidence.cpu().detach().numpy()
         degree_prediction = degree_prediction.cpu().detach().numpy()
         binary_prediction = binary_prediction.cpu().detach().numpy()
+        import os
 
+        folder_name = 'predictions'
+        os.makedirs(folder_name, exist_ok=True)
         np.savetxt('predictions/Pred_Binary_prob', binary_prediction)
         np.savetxt('predictions/Pred_Binary', np.round(binary_prediction))
 
