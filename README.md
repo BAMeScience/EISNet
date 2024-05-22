@@ -9,10 +9,12 @@ To install the required packages, please run the following command:
 pip install -r requirements.txt
 ```
 ## Usage
-you can easliy run the model in ```main.py``` and define global parameters. The file contains the modules required for generated the data ```model.generate_data()```, pre-processing the data ```model.preprocess_data(data=data)```, ```model.Train(Training_data)``` for training the model, and 
-For testing the model you can use ```model.Predict(Test_data)``` 
+You can easliy run the model in ```main.py``` and define global parameters. 
+The file contains the modules required for generating the data ```model.generate_data()``` and  pre-processing the data ```model.preprocess_data(data=data)```.
+For training the model, the user can call ```model.Train(Training_data)```, and 
+for testing the model you can use ```model.Predict(Test_data)```. 
 
-Addtionally ```model.Predict(Test_data)``` will save the results in the folder "predictions"
+Addtionally ```model.Predict(Test_data)``` will save the results in the folder "predictions".
 
 
  
